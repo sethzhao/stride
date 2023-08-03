@@ -1,0 +1,251 @@
+@charset "utf-8";
+html,body{width: 100%;height: 100%;position: absolute;top: 0px;left: 0px;overflow: hidden;}
+.page{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	bottom: 0px;
+}
+.p0{
+	background: url(../images/p0.jpg) no-repeat;
+}
+
+.rule{
+	display: none;
+	background: url(../images/rule.jpg) no-repeat;
+	.close{
+		position: absolute;
+		top: 760px;
+		width: 230px;
+		height: 50px;
+		left: 50%;
+		margin-left: -115px;
+		display: block;
+	}
+}
+
+.car1{
+	position: absolute;
+	top: 595px;
+	left: 6px;
+	.car1Move;
+}
+.car2{
+	position: absolute;
+	opacity: 0;
+	top: 783px;
+	left: 30px;
+}
+.car3{
+	position: absolute;
+	opacity: 0;
+	top: 723px;
+	right: 0px;
+}
+
+.factoryAttention{
+	position: absolute;
+	bottom: 0px;
+	left: 9px;
+}
+
+.enterWrap{
+	position: absolute;
+	top: 800px;
+	left: 300px;
+	width: 181px;
+	height: 83px;
+	img{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	>div{
+		display: none;
+	}
+	>div:first-child{
+		display: block;
+	}
+	.enterMove;
+}
+
+.titleBg{
+	position: absolute;
+	top: 650px;
+	left: 228px;
+}
+
+.titleWrap{
+	position: absolute;
+	top: 645px;
+	left: 240px;
+	>div{
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.titleLight{
+		left: -6px;
+		top: -7px;
+		display: none;
+	}
+}
+
+
+.adv1{
+	position: absolute;
+	top: 384px;
+	left: 33px;
+	img{
+		display: absolute;
+		top: 0px;
+		left: 0px;
+		display: none;
+	}
+	img:first-child{
+		display: block;
+	}
+}
+.adv2{
+	position: absolute;
+	top: 457px;
+	left: 140px;
+}
+.adv3{
+	position: absolute;
+	top: 464px;
+	right: 5px;
+	img{
+		display: absolute;
+		top: 0px;
+		left: 0px;
+		display: none;
+	}
+	img:first-child{
+		display: block;
+	}
+}
+
+.enterMove{
+	animation:_enterMove 1.2s linear infinite;
+	-webkit-animation:_enterMove 1.2s linear infinite;
+}
+
+@keyframes _enterMove
+{
+	0%{
+		top: 800px;
+	}
+	50%{
+		top: 780px;
+	}
+	100% { 
+		top: 770px;
+	}
+}
+@-webkit-keyframes _enterMove
+{
+	0%{
+		top: 800px;
+	}
+	50%{
+		top: 780px;
+	}
+	100% { 
+		top: 770px;
+	}
+}
+
+.car1Move{
+	animation:_car1Move 1s linear 1;
+	-webkit-animation:_car1Move 1s linear 1;
+}
+
+@keyframes _car1Move
+{
+	0%{
+		top: 560px;
+		left: -27px;
+	}
+	100% { 
+		top: 595px;
+		left: 6px;
+	}
+}
+@-webkit-keyframes _car1Move
+{
+	0%{
+		top: 560px;
+		left: -27px;
+	}
+	100% { 
+		top: 595px;
+		left: 6px;
+	}
+}
+.car2Move{
+	animation:_car2Move 1s 1s linear 1 forwards;
+	-webkit-animation:_car2Move 1s 1s linear 1 forwards;
+}
+
+@keyframes _car2Move
+{
+	0%{
+		top: 835px;
+		left: -25px;
+		opacity: 1;
+	}
+	100% { 
+		top: 783px;
+		left: 30px;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes _car2Move
+{
+	0%{
+		top: 835px;
+		left: -25px;
+		opacity: 1;
+	}
+	100% { 
+		top: 783px;
+		left: 30px;
+		opacity: 1;
+	}
+}
+
+.car3Move{
+	animation:_car3Move 1s 2s linear 1 forwards;
+	-webkit-animation:_car3Move 1s 2s linear 1 forwards;
+}
+
+@keyframes _car3Move
+{
+	0%{
+		top: 775px;
+		right: -40px;
+		opacity: 1;
+	}
+	100% { 
+		top: 723px;
+		right: 0px;
+		opacity: 1;
+	}
+}
+@-webkit-keyframes _car3Move
+{
+	0%{
+		top: 775px;
+		right: -40px;
+		opacity: 1;
+	}
+	100% { 
+		top: 723px;
+		right: 0px;
+		opacity: 1;
+	}
+}
+

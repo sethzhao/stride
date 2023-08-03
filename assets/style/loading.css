@@ -1,0 +1,43 @@
+.loadingLayout{z-index:100;position:absolute;left:0px;top:0px;bottom:0px;width:100%;}
+.loadingLayout>img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.count{
+  color:#fee43d;
+  font-size: 30px;
+  font-weight: bold;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  position: absolute;
+  top: 630px;
+  left: 50%;
+  margin-left: -50px;
+  text-align: center;
+}
+.wheelWrap{
+  position: absolute;
+  top: 570px;
+  width: 290px;
+  left: 50%;
+  margin-left: -145px;
+}
+.wheelUp{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.wheelDown{
+  position: absolute;
+  top: 38px;
+  left: 0px;
+}
+
+.wheelUp img{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
